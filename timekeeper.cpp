@@ -24,11 +24,10 @@
 
 #define RTC_SYS_FILE "/sys/class/rtc/rtc0/since_epoch"
 // TODO be able to set offset file using a envar (or argument)
-#define DATA_DIR "/data/time/"
+#define DATA_DIR "/persist/time/"
 #define OFFSET_FILE DATA_DIR "timekeep"
 
-// Remove comment to enable debug
-//#define DEBUG
+#define DEBUG
 #ifdef DEBUG
 #define LOG_DEBUG(...) fprintf(stdout, __VA_ARGS__)
 #else
